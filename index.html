@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Comparing and ordering numbers</div>
+          <div class="lesson-content">
+            <div>
+              <h2>Comparing Numbers <span>🔢</span></h2>
+              <p>
+                When comparing numbers, we look at each digit starting from the leftmost side (biggest place value). 
+              </p>
+              <img src="./images/1.png" alt="" width="80%">
+              <br><img src="./images/2.png" alt="" width="80%">
+              <br>
+              <p>
+                Let us understand how to do it step by step using some examples:
+                <br><b>Example: 5,678,901</b> and <b>3,456,789</b>
+              </p>
+              <h3>Look at the first digit (the millions place):</h3>
+              <p>
+                In <b>5,678,901,</b> the millions digit is <b>5</b>.
+                <br><img src="./images/3.png" alt="" width="80%"><br>
+                In <b>3,456,789</b>, the millions digit is 3.
+                <br><img src="./images/4.png" alt="" width="80%"><br>
+                Since <b>5 is bigger than 3</b>, the number <b>5,678,901</b> is the bigger number.
+              </p>
+              <h3>Example 2: 5,432,189 and 5,678,123</h3>
+              <p>
+                Since the millions digits are the same, move to the next place (the hundred thousands place.
+                <br><br>
+                In 5,432,189, the hundred thousands digit is 4.
+                <br><img src="./images/5.png" alt="" width="80%"><br>
+                In 5,678,123, the hundred thousands digit is 6.
+                <br><img src="./images/6.png" alt="" width="80%"><br>
+                Since 6 is bigger than 4, the number 5,678,123 is the bigger number.
+              </p>
+              <h3>Example: 4,527,890 and 4,573,456</h3>
+              <p>
+                If the millions and hundred thousands digits are the same, look at the ten thousands place:
+                <br><br>
+                In 4,527,890, the hundred thousands digit is 2.
+                <br><img src="./images/7.png" alt="" width="80%"><br>
+                In 4,573,456, the hundred thousands digit is 7.
+                <br><img src="./images/8.png" alt="" width="80%"><br>
+                Since 7 is bigger than 2, the number 4,573,456 is the bigger number.
+              </p>
+              <h3>Example: 5,678,909 and 5,679,809</h3>
+              <p>
+                If the millions, hundred thousands and ten thousands  digits are the same, move to the thousands place:
+                <br><br>
+                In 5,678,909 the thousands digit is 8.
+                <br><img src="./images/9.png" alt="" width="80%"><br>
+                In  5,679,809 the thousands digit is 9.
+                <br><img src="./images/10.png" alt="" width="80%"><br>
+                Since 9 is bigger than 8, the number 5,679,809 is the bigger number.
+              </p>
+              <h3>Example: 5,678,980 and 5,678,390</h3>
+              <p>
+                If the millions, hundred thousands, ten thousands and thousands digits are the same, move to the hundreds place:
+                <br><br>
+                In 5,678,980 the hundreds digit is 9.
+                <br><img src="./images/11.png" alt="" width="80%"><br>
+                In 5,678,390 the hundreds digit is 3.
+                <br><img src="./images/12.png" alt="" width="80%"><br>
+                Since 9 is bigger than 3, the number 5,678,980 is the bigger number.
+              </p>
+              <h3>Example: 5,678,940 and 5,678,920</h3>
+              <p>
+                If the millions, hundred thousands, ten thousands, thousands, and hundreds digits are the same, move to the tens place:
+                <br><br>
+                In 5,678,940, the tens digit is 4.
+                <br><img src="./images/13.png" alt="" width="80%"><br>
+                In 5,678,920, the tens digit is 2.
+                <br><img src="./images/14.png" alt="" width="80%"><br>
+                Since 4 is bigger than 2, the number 5,678,940 is the bigger number.
+              </p>
+              <h3>Example: 5,678,945 and 5,678,943</h3>
+              <p>
+                If the millions, hundred thousands, ten thousands, thousands, hundreds, and tens digits are the same, move to the ones place:
+                <br><br>
+                In 5,678,945, the ones digit is 5.
+                <br><img src="./images/15.png" alt="" width="80%"><br>
+                In 5,678,943, the ones digit is 3.
+                <br><img src="./images/16.png" alt="" width="80%"><br>
+               Since 5 is bigger than 3, the number 5,678,945 is the bigger number.
+              </p>
+              
+          
+              <h3>Summary: <span>🔑</span></h3>
+              <ul>
+                <li>Always start by comparing the leftmost digits.</li>
+                <li>If two digits are the same, move to the next digit on the right.</li>
+                <li>Compare each place value (millions, hundred thousands, thousands, etc.), and the number with the larger digit is the bigger number! <span>✨</span></li>
+                
+              </ul>
+            </div>
+            <hr>
+            <div>
+              <h2>Comparing Numbers Using Symbols <span>🔢</span></h2>
+              <p>
+                When we compare numbers, we use symbols to show which number is greater, less, or if they are equal. 
+                These symbols help us understand the relationship between two numbers.
+              </p>
+          
+              <h3>1. Greater Than ( > ) <span>🦖</span></h3>
+              <p>
+                The symbol > means "greater than." 
+                <br>It shows that one number is bigger than the other.
+
+                <br>Think of it like the open mouth of an alligator, the alligator always opens its mouth toward the bigger number because it wants to eat the bigger number.
+              </p>
+              <p>
+                
+               <b> Example:</b> 7 <strong>></strong> 5 
+               <br><img src="./images/35.png" alt="" width="80%"><br>
+               The alligator's mouth is open toward 7 because it’s bigger than 5.<br>
+               This means 7 is greater than 5.
+              </p>
+          
+              <h3>2. Less Than ( < ) <span>🐊</span></h3>
+              <p>
+                The symbol < means "less than." 
+                <br>It shows that one number is smaller than the other.
+              <br>This time, the small end of the alligator’s mouth points to the smaller number because the alligator is looking for the bigger number to eat.
+
+              </p>
+              <p>
+                <b>Example:</b> 3 <strong><</strong> 6 
+                <br><img src="./images/36.png" alt="" width="80%"><br>
+                This means 3 is less than 6.
+              </p>
+          
+              <h3>3. Equal To ( = ) <span>⚖️</span></h3>
+              <ul>
+                <li>The symbol <strong>=</strong> means "equal to." It shows that both numbers are the same.</li>
+                <li><b>Example:</b> 5 <strong>=</strong> 5 means 5 is equal to 5.</li>
+                <br><img src="./images/37.png" alt="" width="80%"><br>
+              </ul>
+               
+              
+            </div>
+            <hr>
+            <div>
+              <h2>Ordering Numbers <span>🔢</span></h2>
+              <h2>Ordering from Smallest to Largest (Ascending order)</h2>
+              <p>
+                To arrange numbers in <b>Smallest to Largest</b>  order, start with the smallest number and move to the largest.
+            
+                <br><img src="./images/38.png" alt="" width="60%"><br>
+                
+                <b>Example: Arrange below given numbers in ascending order.</b><br>
+                <br><img src="./images/17.png" alt="" width="80%"><br>
+                Use the same place value comparison method.<br>
+                <b>Compare the numbers:</b><br>
+                123,456 is the smallest.<br>
+Next is 234,567.<br>
+Then 678,901.<br>
+Finally, 890,123 is the largest.<br>
+<b>Answer:</b> 123,456; 234,567; 678,901; 890,123.
+
+              </p>
+
+          
+              
+              <h3>Ordering from <b>Largest to Smallest</b> (Descending order) <span>⬇️</span></h3>
+              <p>
+                <br><img src="./images/39.png" alt="" width="60%"><br>
+                <b>Example: Arrange below given numbers in descending order.</b>
+                <br><img src="./images/18.png" alt="" width="70%"><br>
+                Use the same place value comparison method. <span>🧮</span>
+              </p>
+              <h4>Example: Arrange 123,456; 678,901; 234,567; and 890,123 in descending order.</h4>
+              <p>
+                Compare the numbers:<br>
+                890,123 is the largest.<br>
+                Next is 678,901.<br>
+                Then 234,567.<br>
+                Finally, 123,456 is the smallest. <span></span><br>
+                <strong>Answer:</strong> 890,123; 678,901; 234,567; 123,456. <span>🏁</span>
+              </p>
+            </div>
+          </div>
+          
+        
+        
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
